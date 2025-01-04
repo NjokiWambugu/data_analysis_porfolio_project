@@ -11,10 +11,10 @@ understanding of the business' performance during it's operational period.
 ### Table of Contents
 - [Data Sources](#data-sources)
 - [Tools](#tools)
-- [Data Cleaning/Preparation](#data-preparation)
-- [Exploratory Data Analysis(EDA)](#exploratory-data-analysis)
+- [Data Preparation](#data-preparation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
-- [Results/Findings](#results/findings)
+- [Findings](#results/findings)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
 - [References](#references)
@@ -41,14 +41,14 @@ In this project, I use a combination of four tools; Python, Excel, Tableau, and 
 - **MySQL**
   - Exploratory Data Analysis Questions SQL queries
 
-### Data Cleaning/Preparation
+### Data Preparation
 
 I began by cleaning the raw data in Excel, using functions like removing duplicates and applying VLOOKUP to create a product_name column. This cleaned dataset was then used for further analysis and visualizations in Excel and later imported into MySQL for writing queries to answer exploratory data analysis (EDA) questions. Additionally, the data was imported into Tableau for dashboard creation.
 
 For Python, I split the raw data into two CSV files; Products and Sales, which were then merged, cleaned, analyzed, and visualized in Jupyter Notebooks using Matplotlib and Seaborn.
 
 
-### Exploratory Data Analysis(EDA)
+### Exploratory Data Analysis
 
 EDA involved exploring the data looking for important findings on top of some key questions;
 
@@ -89,7 +89,7 @@ top_seller
 
 ---
         
-### Results/Findings
+### Findings
   Here are the answers to the EDA questions using visualizations from various used in this analysis ![Alt text](EDAvisualizations.png)
   
   Other findings:
