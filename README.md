@@ -14,7 +14,7 @@ understanding of the business' performance during it's operational period.
 - [Data Preparation](#data-preparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
-- [Findings](#results/findings)
+- [Findings](#findings)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
 - [References](#references)
