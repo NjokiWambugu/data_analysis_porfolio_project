@@ -11,7 +11,7 @@ understanding of the business' performance during it's operational period.
 ### Table of Contents
 - [Data Sources](#data-sources)
 - [Tools](#tools)
-- [Data Cleaning/Preparation](#data-cleaning/preparation)
+- [Data Cleaning/Preparation](#data-preparation)
 - [Exploratory Data Analysis(EDA)](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
 - [Results/Findings](#results/findings)
