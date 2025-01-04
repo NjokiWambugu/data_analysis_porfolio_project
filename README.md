@@ -1,6 +1,6 @@
 # The Cosy Shop's Sales Analysis
 
-### Project Overview
+## Project Overview
 
 This data analysis project takes a personal retrospective look at an online store I founded in the year 2021. Through the lens of an analyst, we will time travel one last time to explore the shop's data. The purpose of this project is to uncover hidden patterns and interaction between product sold and the customer behaviour. This will then inform strategic marketing decisions and provide a deeper
 understanding of the business' performance during it's operational period. 
@@ -8,7 +8,7 @@ understanding of the business' performance during it's operational period.
 ![Alt text](TCStableaudashboard.png)
 
 ---
-### Table of Contents
+## Table of Contents
 - [Data Sources](#data-sources)
 - [Tools](#tools)
 - [Data Preparation](#data-preparation)
@@ -18,14 +18,15 @@ understanding of the business' performance during it's operational period.
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
 - [References](#references)
- 
+- [Explore the Full Project Repository](#explore-the-full-repository)
+  
 ---
 
-### Data Sources
+## Data Sources
 
 The primary data for this analysis is 'Rawdata.xlsl', containing two worksheets; Products and Sales. It was intitially collected but was later refined by extending the entries to provide a more comprehensive dataset.
 
-### Tools
+## Tools
 In this project, I use a combination of four tools; Python, Excel, Tableau, and MySQL queries to showcase technical versatility.
 
 - **Excel**
@@ -33,7 +34,7 @@ In this project, I use a combination of four tools; Python, Excel, Tableau, and 
   - Analysis
   - Visualization
 - **Python(Pandas, Matplotlib, Seaborn)**
-  - Data Preprosessing
+  - Data Preprossessing
   - Exploratory Data Analysis
   - Data Visualization
 - **Tableau**
@@ -41,14 +42,14 @@ In this project, I use a combination of four tools; Python, Excel, Tableau, and 
 - **MySQL**
   - Exploratory Data Analysis Questions SQL queries
 
-### Data Preparation
+## Data Preparation
 
 I began by cleaning the raw data in Excel, using functions like removing duplicates and applying VLOOKUP to create a product_name column. This cleaned dataset was then used for further analysis and visualizations in Excel and later imported into MySQL for writing queries to answer exploratory data analysis (EDA) questions. Additionally, the data was imported into Tableau for dashboard creation.
 
 For Python, I split the raw data into two CSV files; Products and Sales, which were then merged, cleaned, analyzed, and visualized in Jupyter Notebooks using Matplotlib and Seaborn.
 
 
-### Exploratory Data Analysis
+## Exploratory Data Analysis
 
 EDA involved exploring the data looking for important findings on top of some key questions;
 
@@ -59,7 +60,7 @@ EDA involved exploring the data looking for important findings on top of some ke
  5. What is the top-selling product per customer location?
  6. What was the monthly bestseller?
 
-### Data Analysis
+## Data Analysis
   - Used Excel to perform in-depth data slicing and analysis, applying pivot tables, advanced formulas, and custom filters. I calculated metrics like sale distribution across different products and categories, average spend per location and average sale per location.
   - I answered the key EDA questions like " What was the monthly bestseller" using MySQL queries. A query for this particular
  question is;
@@ -89,7 +90,7 @@ top_seller
 
 ---
         
-### Findings
+## Findings
   Here are the answers to the EDA questions using visualizations from various used in this analysis ![Alt text](EDAvisualizations.png)
   
   Other findings:
@@ -98,22 +99,26 @@ top_seller
 3. Nairobi emerges as the top-performing region, significantly surpassing other locations.
 4. Retention rates are relatively low, highlighting an opportunity to improve long-term customer engagement.
  
-### Recommendations
+## Recommendations
 
 1. Diversify and implement fast product rotation for products that are performing well, such as sweaters, diffusers, candles, and cardigans.
 2. Increase marketing campaigns in Westlands, Thika, Donholm, and Kileleshwa, as these areas show higher buying activity and spending.
 3. Focus on increasing customer engagement through interactive content like polls, Q&A sessions, and user-generated content to build - 
 stronger brand loyalty and foster a community feel, which can convert followers into repeat customers.
 
-### Limitations
+## Limitations
 1. Limited historical data made it impossible to identify longterm trends and seasonal patterns.
 2. Lack of user feedback to help validate the findings as the shop nolonger operates.
 3. The data is oudated and the findings may no longer stand as everything from industry's landscape, customer preferences and product 
  popularity might have significantly changed in the last few years.
 
-### References
+## References
  - SQL for Business by Werty
  - Data Science with Jupyter by Prateek Gupta
+---
+## Explore the Full Project Repository
+[Click here to view the full repository](https://github.com/NjokiWambugu/data_analysis_porfolio_project)
+
 
 
 
