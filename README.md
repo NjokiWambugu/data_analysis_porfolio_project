@@ -30,26 +30,33 @@ In this project, I use a combination of four tools; Python, Excel, Tableau, and 
   - I wrote SQL queries to answer some basic questions using "Rawdata.xlsx" file
 
 ### Data Cleaning/Preparation
-### Exploratory Data Analysis
-On top of insights here are some questions that need to be answered;
+### Exploratory Data Analysis(EDA)
+On top of insights here are some questions that need to be answered
 
  1. What is the distribution of products sold?
  2. What are the top 10 customer locations based on sales volume?
  3. What is the average amount spent per customer location?
- 4. What is the top-selling product per customer location?
- 5. What was the monthly bestseller?
+ 4. What is the best performing product category?
+ 5. What is the top-selling product per customer location?
+ 6. What was the monthly bestseller?
 
 ### Data Analysis
 ### Results/Findings
- Product fatigue is noticeable for every product after a while even with strategic marketing
- Clothing category seems to be performing well particulary knit wear
- Nairobi area seems to be doing well compared to other regions
+  Here are the answers to the EDA questions using visualizations ![Alt text]
+  
+  Other findings:
+  -  Product visibility and engagement decline after sustained exposure, indicating noticeable fatigue over time. 
+  -  The clothing category, especially knitwear, consistently outperforms other product lines.
+  -  Nairobi emerges as the top-performing region, significantly surpassing other locations.
+  -  Retention rates are relatively low, highlighting an opportunity to improve long-term customer engagement.
  
-### Recommendation
+### Recommendations
 
-Diversify or switch up products oftenly to avoid ad and product fatigue 
-Try to lean towards knit wear as they are doing well
-Increase marketing campaigns in Westlands, Thika, Donholm and Kileleshwa areas as they buy and spend more
+ 
+  - Diversify and implement fast product rotation for products that are performing well, such as sweaters, diffusers, candles, and cardigans.
+  - Increase marketing campaigns in Westlands, Thika, Donholm, and Kileleshwa, as these areas show higher buying activity and spending.
+  - Focus on increasing customer engagement through interactive content like polls, Q&A sessions, and user-generated content to build - 
+stronger brand loyalty and foster a community feel, which can convert followers into repeat customers.
 
 ### Limitations
 ### References
