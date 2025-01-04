@@ -1,7 +1,5 @@
 # The Cosy Shop's Sales Analysis
 
-### Table of Contents
-
 ### Project Overview
 
 This data analysis project takes a personal retrospective look at an online store I founded in the year 2021. Through the lens of an analyst, we will time travel one last time to explore the shop's data. The purpose of this project is to uncover hidden patterns and interaction between product sold and the customer behaviour. This will then inform strategic marketing decisions and provide a deeper
@@ -9,6 +7,18 @@ understanding of the business' performance during it's operational period.
 
 ![Alt text](TCStableaudashboard.png)
 
+---
+### Table of Contents
+- [Data Sources](#data_sources)
+- [Tools](#tools)
+- [Data Cleaning/Preparation](#data_cleaning/preparation)
+- [Exploratory Data Analysis(EDA)](#exploratory_data_analysis)
+- [Data Analysis](#data_analysis)
+- [Results/Findings](#results/findings)
+- [Recommendations](#recommendations)
+- [Limitations](#limitations)
+- [References](#references)
+ 
 ---
 
 ### Data Sources
@@ -40,7 +50,7 @@ For Python, I split the raw data into two CSV files; Products and Sales, which w
 
 ### Exploratory Data Analysis(EDA)
 
-EDA involved exploring the data looking for important findings On top of some key questions;
+EDA involved exploring the data looking for important findings on top of some key questions;
 
  1. What is the distribution of products sold?
  2. What are the top 10 customer locations based on sales volume?
@@ -76,6 +86,8 @@ top_seller = top_sold.loc[top_sold.groupby(["customer_location"])["total_sold"].
 top_seller
 ```
 - Visualized the data in Tableau and created an interactive dashboard to validate key patterns from the other tools.
+
+---
         
 ### Results/Findings
   Here are the answers to the EDA questions using visualizations from various used in this analysis ![Alt text](EDAvisualizations.png)
@@ -100,8 +112,8 @@ stronger brand loyalty and foster a community feel, which can convert followers 
  popularity might have significantly changed in the last few years.
 
 ### References
-SQL for Business by Werty
-Data Science with Jupyter by Prateek Gupta
+ - SQL for Business by Werty
+ - Data Science with Jupyter by Prateek Gupta
 
 
 
