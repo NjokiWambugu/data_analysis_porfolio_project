@@ -39,7 +39,8 @@ For Python, I split the raw data into two CSV files; Products and Sales, which w
 
 
 ### Exploratory Data Analysis(EDA)
-On top of insights here are some questions that need to be answered
+
+EDA involved exploring the data looking for important findings On top of some key questions;
 
  1. What is the distribution of products sold?
  2. What are the top 10 customer locations based on sales volume?
@@ -49,24 +50,58 @@ On top of insights here are some questions that need to be answered
  6. What was the monthly bestseller?
 
 ### Data Analysis
+  - Used Excel to perform in-depth data slicing and analysis, applying pivot tables, advanced formulas, and custom filters. I calculated metrics like sale distribution across different products and categories, average spend per location and average sale per location.
+  - I answered the key EDA questions like " What was the monthly bestseller" using MySQL queries. A query for this particular
+ question is;
+
+```
+SELECT selling_month, product_name, total_sold
+FROM(SELECT MONTHNAME(STR_TO_DATE(s.date_of_purchase, '%e-%b-%Y')) AS selling_month,
+        p.product_name,
+        COUNT(*) AS total_sold,
+        ROW_NUMBER() OVER (PARTITION BY MONTHNAME(STR_TO_DATE(s.date_of_purchase, '%e-%b-%Y'))
+       ORDER BY COUNT(*) DESC)  AS row_rank
+        From sales s
+        JOIN products p ON s.product_ID = p.product_ID
+        GROUP BY MONTHNAME(STR_TO_DATE(s.date_of_purchase, '%e-%b-%Y')), p.product_name
+        ) AS monthly_sales
+        WHERE row_rank = 1;
+```
+ - Used python's Jupyter notebook as a standalone tool and did everything from merging files, cleaning, data analysis and visualizations to answer the key EDA questions. For EDA question "Bestselling product per location?" this code will display location, product and quantity sold in descending order 
+
+ ```# Top selling product per location
+top_sold = merged_data.groupby(["customer_location", "product_name"]).size().reset_index(name="total_sold")
+top_seller = top_sold.loc[top_sold.groupby(["customer_location"])["total_sold"].idxmax()].sort_values(
+    by="total_sold", ascending = False).reset_index(drop=True)
+top_seller
+```
+- Visualized the data in Tableau and created an interactive dashboard to validate key patterns from the other tools.
+        
 ### Results/Findings
-  Here are the answers to the EDA questions using visualizations ![Alt text](EDAvisualizations.png)
+  Here are the answers to the EDA questions using visualizations from various used in this analysis ![Alt text](EDAvisualizations.png)
   
   Other findings:
-  -  Product visibility and engagement decline after sustained exposure, indicating noticeable fatigue over time. 
-  -  The clothing category, especially knitwear, consistently outperforms other product lines.
-  -  Nairobi emerges as the top-performing region, significantly surpassing other locations.
-  -  Retention rates are relatively low, highlighting an opportunity to improve long-term customer engagement.
+1. Product visibility and engagement decline after sustained exposure, indicating noticeable fatigue over time. 
+2. The clothing category, especially knitwear, consistently outperforms other product lines.
+3. Nairobi emerges as the top-performing region, significantly surpassing other locations.
+4. Retention rates are relatively low, highlighting an opportunity to improve long-term customer engagement.
  
 ### Recommendations
 
-  - Diversify and implement fast product rotation for products that are performing well, such as sweaters, diffusers, candles, and cardigans.
-  - Increase marketing campaigns in Westlands, Thika, Donholm, and Kileleshwa, as these areas show higher buying activity and spending.
-  - Focus on increasing customer engagement through interactive content like polls, Q&A sessions, and user-generated content to build - 
+1. Diversify and implement fast product rotation for products that are performing well, such as sweaters, diffusers, candles, and cardigans.
+2. Increase marketing campaigns in Westlands, Thika, Donholm, and Kileleshwa, as these areas show higher buying activity and spending.
+3. Focus on increasing customer engagement through interactive content like polls, Q&A sessions, and user-generated content to build - 
 stronger brand loyalty and foster a community feel, which can convert followers into repeat customers.
 
 ### Limitations
+1. Limited historical data made it impossible to identify longterm trends and seasonal patterns.
+2. Lack of user feedback to help validate the findings as the shop nolonger operates.
+3. The data is oudated and the findings may no longer stand as everything from industry's landscape, customer preferences and product 
+ popularity might have significantly changed in the last few years.
+
 ### References
+SQL for Business by Werty
+Data Science with Jupyter by Prateek Gupta
 
 
 
