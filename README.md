@@ -3,7 +3,7 @@
 ## Project Overview
 
 This data analysis project takes a personal retrospective look at an online store I founded in the year 2021. Through the lens of an analyst, we will time travel one last time to explore the shop's data. The purpose of this project is to uncover hidden patterns and interaction between product sold and the customer behaviour. This will then inform strategic marketing decisions and provide a deeper
-understanding of the business' performance during it's operational period. 
+understanding of the business' performance during its operational period. 
 
 ![Alt text](TCStableaudashboard.png)
 
@@ -24,17 +24,17 @@ understanding of the business' performance during it's operational period.
 
 ## Data Sources
 
-The primary data for this analysis is 'Rawdata.xlsl', containing two worksheets; Products and Sales. It was intitially collected but was later refined by extending the entries to provide a more comprehensive dataset.
+The primary data for this analysis is 'Rawdata.xlsl', containing two worksheets; Products and Sales. It was intially collected but was later refined by extending the entries to provide a more comprehensive dataset.
 
 ## Tools
-In this project, I use a combination of four tools; Python, Excel, Tableau, and MySQL queries to showcase technical versatility.
+In this project, I use a combination of four tools; Python, Excel, Tableau, and MySQL queries to demonstrate technical proficiency.
 
 - **Excel**
   - Data cleaning and Organization
   - Analysis
   - Visualization
 - **Python(Pandas, Matplotlib, Seaborn)**
-  - Data Preprossessing
+  - Data Preprocessing
   - Exploratory Data Analysis
   - Data Visualization
 - **Tableau**
@@ -78,7 +78,7 @@ FROM(SELECT MONTHNAME(STR_TO_DATE(s.date_of_purchase, '%e-%b-%Y')) AS selling_mo
         ) AS monthly_sales
         WHERE row_rank = 1;
 ```
- - Used python's Jupyter notebook as a standalone tool and did everything from merging files, cleaning, data analysis and visualizations to answer the key EDA questions. For EDA question "Bestselling product per location?" this code will display location, product and quantity sold in descending order 
+ - Used Python's Jupyter Notebook as a standalone tool and did everything from merging files, cleaning, data analysis and visualizations to answer the key EDA questions. For EDA question "Bestselling product per location?" this code will display location, product and quantity sold in descending order 
 
  ```# Top selling product per location
 top_sold = merged_data.groupby(["customer_location", "product_name"]).size().reset_index(name="total_sold")
