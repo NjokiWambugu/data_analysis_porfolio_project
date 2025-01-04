@@ -4,8 +4,10 @@
 
 ### Project Overview
 
-This data analysis project takes a retrospective look at an online store I founded in the year 2021. Through the lens of an analyst, we will time travel one last time to explore the shop's data. The purpose of this project is to uncover hidden patterns and interaction between product sold and the customer behaviour. This will then inform strategic marketing decisions and provide a deeper
+This data analysis project takes a personal retrospective look at an online store I founded in the year 2021. Through the lens of an analyst, we will time travel one last time to explore the shop's data. The purpose of this project is to uncover hidden patterns and interaction between product sold and the customer behaviour. This will then inform strategic marketing decisions and provide a deeper
 understanding of the business' performance during it's operational period. 
+
+![Alt text](TCStableaudashboard.png)
 
 ---
 
@@ -25,11 +27,17 @@ In this project, I use a combination of four tools; Python, Excel, Tableau, and 
   - Exploratory Data Analysis
   - Data Visualization
 - **Tableau**
-  - Visualization using cleaned and merged Excel data "Cleanrawdata.xlsx" file
+  - Visualization
 - **MySQL**
-  - I wrote SQL queries to answer some basic questions using "Rawdata.xlsx" file
+  - Exploratory Data Analysis Questions SQL queries
 
 ### Data Cleaning/Preparation
+
+I began by cleaning the raw data in Excel, using functions like removing duplicates and applying VLOOKUP to create a product_name column. This cleaned dataset was then used for further analysis and visualizations in Excel and later imported into MySQL for writing queries to answer exploratory data analysis (EDA) questions. Additionally, the data was imported into Tableau for dashboard creation.
+
+For Python, I split the raw data into two CSV files; Products and Sales, which were then merged, cleaned, analyzed, and visualized in Jupyter Notebooks using Matplotlib and Seaborn.
+
+
 ### Exploratory Data Analysis(EDA)
 On top of insights here are some questions that need to be answered
 
@@ -42,7 +50,7 @@ On top of insights here are some questions that need to be answered
 
 ### Data Analysis
 ### Results/Findings
-  Here are the answers to the EDA questions using visualizations ![Alt text]
+  Here are the answers to the EDA questions using visualizations ![Alt text](EDAvisualizations.png)
   
   Other findings:
   -  Product visibility and engagement decline after sustained exposure, indicating noticeable fatigue over time. 
@@ -52,7 +60,6 @@ On top of insights here are some questions that need to be answered
  
 ### Recommendations
 
- 
   - Diversify and implement fast product rotation for products that are performing well, such as sweaters, diffusers, candles, and cardigans.
   - Increase marketing campaigns in Westlands, Thika, Donholm, and Kileleshwa, as these areas show higher buying activity and spending.
   - Focus on increasing customer engagement through interactive content like polls, Q&A sessions, and user-generated content to build - 
