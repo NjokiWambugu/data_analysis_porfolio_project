@@ -62,7 +62,7 @@ EDA involved exploring the data looking for important findings on top of some ke
 
 ## Data Analysis
   - Used Excel to perform in-depth data slicing and analysis, applying pivot tables, advanced formulas, and custom filters. I calculated metrics like sale distribution across different products and categories, average spend per location and average sale per location.
-  - I answered the key EDA questions like " What was the monthly bestseller?" using MySQL queries. A query for this particular
+  - I answered the key EDA questions like " What was the monthly bestseller?" using SQL queries. A query for this particular
  question is;
 
 ```
