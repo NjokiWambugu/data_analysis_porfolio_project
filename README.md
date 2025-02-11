@@ -27,7 +27,7 @@ understanding of the business' performance during its operational period.
 The primary data for this analysis is `Rawdata.xlsl`, containing two worksheets; Products and Sales. It was intially collected but was later refined by extending the entries to provide a more comprehensive dataset.
 
 ## Tools
-In this project, I use a combination of four tools; Python, Excel, Tableau, and MySQL queries to demonstrate technical proficiency.
+In this project, I use a combination of four tools; Python, Excel, Tableau, and SQL queries to demonstrate technical proficiency.
 
 - **Excel**
   - Data cleaning and Organization
@@ -113,7 +113,7 @@ stronger brand loyalty and foster a community feel, which can convert followers 
  popularity might have significantly changed in the last few years.
 
 ## References
- - SQL for Business" by Werty (2022)
+ - "SQL for Business" by Werty (2022)
  - "Data Science with Jupyter" by Prateek Gupta
 ---
 ## Explore the Full Project Repository
